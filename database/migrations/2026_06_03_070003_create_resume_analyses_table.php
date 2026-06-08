@@ -21,7 +21,7 @@ return new class extends Migration
             $table->json('missing_keywords')->nullable();
             $table->json('recommendations')->nullable();
             $table->longText('raw_ai_response')->nullable();
-            $table->timestamp('analyzed_at');
+            $table->timestamp('analyzed_at')->nullable();
             $table->timestamps();
 
             $table->index('user_id');
